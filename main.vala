@@ -103,7 +103,7 @@ int main (string[] argv)
 		 */
 		else
 		{
-			stdout.printf("'%s' is an invalid module.", argv[1]);
+			stdout.printf("'%s' is an invalid module.\n", argv[1]);
 			return 1;
 		}
 
