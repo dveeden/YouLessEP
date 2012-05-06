@@ -3,15 +3,21 @@ This is a small tool to parse and display statistics from a youless.
 See: http://youless.nl/ 
 
 === Installation ===
-Install 
+Install the following prerequisites
 
-PKG_CONFIG	UBUNTU
+PKG_CONFIG	UBUNTU/DEBIAN
 json-glib-1.0	libjson-glib-dev
 sqlite3		libsqlite3-dev
-glib-2.0
+glib-2.0	gir1.0-glib-2.0
 gtk+-3.0
 		valac
 
+Then run make.
+
+If you want to build a non-gui version: 
+	Install the prerequisites. gtk+-3.0 is not required.
+	Change GUI?=1 to GUI?=0 in the Makefile
+	Run make
 
 === Download data ===
 Download json file from youless. Do this atleast every 30 minutes.
